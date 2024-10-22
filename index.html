@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Event Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Complete Event Tracker</h1>
+
+    <!-- Click Event -->
+    <div class="section section1">
+        <h3>Click Event</h3>
+        <button id="clickButton">Click Me</button>
+        <p id="clickCount">Click Count: 0</p>
+    </div>
+
+    <!-- Double Click Event -->
+    <div class="section">
+        <h3>Double-Click Event</h3>
+        <button id="doubleClickArea">Double-click here</button>
+        <p id="doubleClickStatus">No double-click detected yet.</p>
+    </div>
+
+    <!-- Load Event -->
+    <div class="section">
+        <h3>Load Event</h3>
+        <p id="loadStatus">Waiting for the page to load...</p>
+    </div>
+
+    <!-- Mouse Movement Event -->
+    <div class="section section2">
+        <h3>Mouse Events</h3>
+        <div id="mouseArea">300 x 300</div>
+        <p id="mousePosition">Mouse Position: (0, 0)</p>
+    </div>
+
+    <!-- Keyboard Event -->
+    <div class="section section3">
+        <h3>Keyboard Events</h3>
+        <input type="text" id="keyboardInput" placeholder="Type something">
+        <p id="lastKey">Last Key Pressed: </p>
+    </div>
+
+    <!-- Copy Event -->
+    <div class="section">
+        <h3>Copy Event</h3>
+        <p id="copyText">Copy this text</p>
+        <p id="copyStatus">No text copied yet.</p>
+    </div>
+
+    <!-- Paste Event -->
+    <div class="section">
+        <h3>Paste Event</h3>
+        <input type="text" id="pasteInput" placeholder="Paste something here">
+        <p id="pasteStatus">Waiting for content to be pasted...</p>
+    </div>
+
+    <!-- Focus and Blur Events -->
+    <div class="section section4">
+        <h3>Focus and Blur Events</h3>
+        <input type="text" id="focusInput" placeholder="Focus/Blur Test">
+        <p id="focusStatus">Focus status here</p>
+    </div>
+
+    <!-- Window Resize Event -->
+    <div class="section section5">
+        <h3>Window Resize Event</h3>
+        <p id="windowSize">Current Window Size: </p>
+    </div>
+
+    <!-- Touch Event -->
+    <div class="section section6">
+        <h3>Touch Event</h3>
+        <div id="touchArea">Touch Area</div>
+        <p id="touchStatus">Touch Coordinates: </p>
+    </div>
+
+    <!-- Scroll Event -->
+    <div class="section">
+        <h3>Scroll Event</h3>
+        <p id="scrollStatus">Scroll the page to trigger this event!</p>
+    </div>
+
+    <!-- Form Submit Event -->
+    <div class="section section7">
+        <h3>Form Submit Event</h3>
+        <form id="submitForm">
+            <input type="text" id="formInput" placeholder="Submit me">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="formStatus">Form Status: </p>
+    </div>
+
+    <!-- input Event -->
+    <div class="section">
+        <h3>Input Event</h3>
+        <input type="text" id="inputEvent" placeholder="Type something">
+        <p id="inputResult">Waiting for input...</p>
+    </div>
+
+    <!-- Drag and Drop Event -->
+    <div class="section section8">
+        <h3>Drag and Drop Event</h3>
+        <div id="dragArea" draggable="true">Drag Me</div>
+        <div id="dropArea">Drop Here</div>
+        <p id="dragDropStatus">Drag and Drop Status: </p>
+    </div>
+
+    <!-- Media Event -->
+    <div class="section section9">
+        <h3>Media Event</h3>
+        <video id="media" controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                type="video/mp4">
+        </video>
+        <p id="mediaStatus">Media Status: Not started</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
